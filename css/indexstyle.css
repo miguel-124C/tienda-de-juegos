@@ -1,0 +1,123 @@
+body{
+    background-color: #57f;
+    overflow-x: hidden;
+}
+
+
+.cover-page{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/002/070/936/large_2x/abstract-3d-black-gradient-metallic-diagonal-stripes-pattern-weave-background-and-texture-vector.jpg);
+    height: 500px;
+    background-position: cover;
+    background-position: top;
+    font-size: 50px;
+}
+.cover-page__title{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #55f;
+    font-size : 5em;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 1000;
+}
+
+
+
+
+
+.main{
+    height: 100%;
+}
+
+.subtitle{
+    height: 100px;
+    color: #fff;
+    background-color: #000;
+    border-top: 2px solid #111;
+    padding: 20PX;
+
+    font-size: 50px;
+    text-align: center;
+}
+
+.cont-tienda{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 50px;
+    grid-auto-flow: dense;
+    grid-auto-rows: 300px;
+    grid-auto-columns: 300px;
+    max-width: 5000px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+}
+.tienda__juegos{
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    transition-property: transform ;
+    transition-duration: .4s;
+}
+.tienda__juegos:hover{
+    transform: scale(1.1, 1.1);
+    display: flex;
+    justify-content: center;
+}
+.game-image{
+    object-fit: cover;
+    height: 300px;
+    width: 300px;
+    min-width: 280px;
+}
+.game-shop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+    height: 30px;    
+    color: #fff;
+    text-decoration: none;
+}
+.game-shop:hover{
+    background: linear-gradient(to top, #000,#557);
+
+}
+
+@media screen and (max-width:1000px) and (min-width:720px){
+    .cover-page{
+        height: 400px;
+    }
+    .cover-page__title{
+        font-size : 3em;
+    }
+    .subtitle{
+        font-size: 45px;
+
+    }
+}
+@media screen and (max-width:720px) and (min-width:360px) {
+    .cover-page{
+        height: 300px;
+    }
+    .cover-page__title{
+        font-size : 2em;
+    }
+    .subtitle{
+        font-size: 40px;
+
+    }
+}
+@media screen and (max-width:360px) {
+    .cover-page{
+        height: 200px;
+    }
+    .cover-page__title{
+        font-size : 1em;
+    }
+    .subtitle{
+        font-size: 30px;
+    }
+}
